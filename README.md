@@ -10,6 +10,6 @@
 1. 
 
 **Topics/Skills covered:**
-- 
+
 
 **Demonstration of completed tasks:**
