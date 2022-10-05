@@ -1,5 +1,5 @@
-# CMU-95-702-Distributed-Systems-Project3
-**Project 3 for CMU course 95-702 (Distributed Systems)Spring 2022**
+# Distributed-Systems-Project3
+**Project 3 - Distributed Systems**
 
 **Readme in progress**
 
