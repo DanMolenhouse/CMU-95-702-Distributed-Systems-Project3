@@ -29,24 +29,24 @@
 
 
 **Demonstration of completed tasks:**
-**_ Task 0 execution, raw client console output demonstrating interaction with the blobkchain: _**
+Task 0 execution, raw client console output demonstrating interaction with the blobkchain:
 
-/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63018:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/danmolenhouse/Project3Task0/out/production/Project3Task0:/Users/danmolenhouse/Project3Task0/gson-2.8.2.jar BlockChain
-0. View basic blockchain status.
-1. Add a transaction to the blockchain.
-2. Verify the blockchain.
-3. View the blockchain.
-4. Corrupt the chain.
-5. Hide the corruption by repairing the chain.
-6. Exit client.
-0
-Current Size of chain: 1
-Difficulty of most recent block: 2
-Total difficulty for all blocks: 2
-Approximate hashes per second on this machine: 2074
-Expected total hashes required for the whole chain: 256.0
-Nonce for the most recent block: 84
-Chain hash: 003eae6552b035d4d63551fb9bc0d64b282aa2ed226bc6a6045a66674544adf6
+>/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63018:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/danmolenhouse/Project3Task0/out/production/Project3Task0:/Users/danmolenhouse/Project3Task0/gson-2.8.2.jar BlockChain
+>0. View basic blockchain status.
+>1. Add a transaction to the blockchain.
+>2. Verify the blockchain.
+>3. View the blockchain.
+>4. Corrupt the chain.
+>5. Hide the corruption by repairing the chain.
+>6. Exit client.
+>0
+>Current Size of chain: 1
+>Difficulty of most recent block: 2
+>Total difficulty for all blocks: 2
+>Approximate hashes per second on this machine: 2074
+>Expected total hashes required for the whole chain: 256.0
+>Nonce for the most recent block: 84
+>Chain hash: 003eae6552b035d4d63551fb9bc0d64b282aa2ed226bc6a6045a66674544adf6
 
 0. View basic blockchain status.
 1. Add a transaction to the blockchain.
