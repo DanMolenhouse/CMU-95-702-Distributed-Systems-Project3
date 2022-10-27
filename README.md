@@ -15,8 +15,10 @@
       - Expected hashes for whole chain
       - Nonce for the most recent block
       - Hash of the whole chain
+      
   b. Add a transaction to the chain.
       - For the purposes of this simple blockchain, a transaction is simply a string that says something like "Bob pays Joe 50 Coins". The user also chooses a difficulty in this step, which is the number of leading 0's in the hash of the block. 
+      
   c. Verify the blockchain.
   d. Corrupt the chain.
   e. Repair the chain and eliminate corruption.
