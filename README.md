@@ -8,13 +8,13 @@
 0. Install Gson in IntelliJ
 1. Build a standalone blockchain that allows the user to:
   a. View basic blockchain status. This includes:
-      - number of transactions on the chain
-      - difficulty of the most recent block
-      - total difficulty for all blocks
-      - hashes per second of the current machine
-      - expected hashes for whole chain
-      - nonce for the most recent block
-      - hash of the whole chain
+      - Number of transactions on the chain
+      - Difficulty of the most recent block
+      - Total difficulty for all blocks
+      - Hashes per second of the current machine
+      - Expected hashes for whole chain
+      - Nonce for the most recent block
+      - Hash of the whole chain
   b. Add a transaction to the chain.
       - For the purposes of this simple blockchain, a transaction is simply a string that says something like "Bob pays Joe 50 Coins". The user also chooses a difficulty in this step, which is the number of leading 0's in the hash of the block. 
   c. Verify the blockchain.
