@@ -43,17 +43,11 @@ Task 0, part a execution:
 >0
 >
 >Current Size of chain: 1
->
 >Difficulty of most recent block: 2
->
 >Total difficulty for all blocks: 2
->
 >Approximate hashes per second on this machine: 2074
->
 >Expected total hashes required for the whole chain: 256.0
->
 >Nonce for the most recent block: 84
->
 >Chain hash: 003eae6552b035d4d63551fb9bc0d64b282aa2ed226bc6a6045a66674544adf6
 
 
