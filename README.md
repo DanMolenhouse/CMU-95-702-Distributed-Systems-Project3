@@ -29,7 +29,7 @@
 
 
 **Demonstration of completed tasks:**
-Task 0 execution, raw client console output demonstrating interaction with the blobkchain:
+**_ Task 0 execution, raw client console output demonstrating interaction with the blobkchain: _**
 
 /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63018:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/danmolenhouse/Project3Task0/out/production/Project3Task0:/Users/danmolenhouse/Project3Task0/gson-2.8.2.jar BlockChain
 0. View basic blockchain status.
