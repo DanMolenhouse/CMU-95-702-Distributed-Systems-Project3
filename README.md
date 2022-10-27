@@ -6,8 +6,7 @@
 
 **Tasks:**
 
-0. Install Gson in IntelliJ
-1. Build a standalone blockchain that allows the user to:
+0. Build a standalone blockchain that allows the user to:
   a. View basic blockchain status. This includes:
       - Number of transactions on the chain
       - Difficulty of the most recent block
@@ -23,7 +22,8 @@
   c. Verify the blockchain.
   d. Corrupt the chain.
   e. Repair the chain and eliminate corruption.
-3. Create a distributed system where a remote client interacts with a blockchain API
+  
+1. Create a distributed system where a remote client interacts with a blockchain API
 
 **Topics/Skills covered:**
 
