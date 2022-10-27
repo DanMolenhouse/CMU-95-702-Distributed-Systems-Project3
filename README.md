@@ -5,6 +5,7 @@
 
 
 **Tasks:**
+
 0. Install Gson in IntelliJ
 1. Build a standalone blockchain that allows the user to:
   a. View basic blockchain status. This includes:
