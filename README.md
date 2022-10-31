@@ -106,7 +106,7 @@ This is an example of a transaction being added to the chain:
 >
 >Total execution time was 7.0 milliseconds
 
-The user can check the status of the chain with the following input. This will check for proof of work errors, the methodology can be explored in the BlockChain.java file.
+The user can check the status of the chain with the following input. This will check for proof of work errors.
 
 >0. View basic blockchain status.
 >1. Add a transaction to the blockchain.
@@ -122,6 +122,48 @@ The user can check the status of the chain with the following input. This will c
 >
 >Total execution time was 20.0 milliseconds
 
+The logic for this is as follows, taken from BlockChain.java:
 
+ //Tests if chain is valid
+    public java.lang.String isChainValid(){
 
+        //if block is empty besides genesis chain
+       if(blockchain.size()==1){
+
+           String hashCheck = blockchain.get(0).calculateHash();
+           String target = new String(new char[blockchain.get(0).getDifficulty()]).replace('\0', '0');
+
+           if(!chainHash.equals(hashCheck)){
+               return "Chain hash mismatch";
+           }else if(!hashCheck.substring( 0, blockchain.get(0).getDifficulty()).equals(target)){
+               return "Genesis block proof of work error";
+           }else{
+               return "Chain verification: TRUE";
+           }
+       }
+
+       //if blockchain has blocks added
+       if(blockchain.size()>1) {
+            for (int i = 1; i < blockchain.size(); i++) {
+                //Hash proof of work target
+                String target = new String(new char[blockchain.get(i).getDifficulty()]).replace('\0', '0');
+
+                //Get parent hash
+                String block0hash = blockchain.get(i-1).calculateHash();
+
+                //Get hash pointer
+                String block1hashPointer = blockchain.get(i).getPreviousHash();
+
+                //Get current hash
+                String block1hash = blockchain.get(i).calculateHash();
+
+                //check proof of work / leading zeros
+                if(!block1hash.substring( 0, blockchain.get(i).getDifficulty()).equals(target)){
+                    return "Block " + i + " proof of work error";
+                }else if(!block0hash.equals(block1hashPointer)){
+                    //test previous hash
+                    return "Block " + i  + " hash pointer error";
+                }
+            }
+        }
 
