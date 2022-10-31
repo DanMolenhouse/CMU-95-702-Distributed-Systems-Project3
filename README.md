@@ -1,10 +1,12 @@
 # Distributed-Systems-Project3
 **Project 3 - Distributed Systems**
 
-**Readme still in progress**
 
 **Project Objective:**
-
+1. Distinguish between functional and non-functional characteristics of distributed systems.
+2. Understand how blockchains technology works by creating a blockchain API that a remote client interacts with.
+    - Note that the blockchain implemented here is not true to real blockchains, which are decentralized and include P2P communication. This blockchain also does not include Merkle Trees, it simply serves as a foundation of understanding.
+3. Use JSON messaging for communicaiton.
 
 **Tasks:**
 
@@ -21,15 +23,15 @@
   - Verify the blockchain.
   - Corrupt the chain.
   - Repair the chain and eliminate corruption. 
-2. Create a distributed system where a remote client interacts with a blockchain API
-3. 
+2. Implement the blockchain completed in Task 1 on a remote server.
+3. Create a client that communicates with the Blockchain server through TCP sockets using JSON messages.
 
 **Topics/Skills covered:**
-
+- Blockchain fundamentals
 
 **Demonstration of completed tasks:**
 
-Task 0, part a execution. This is the raw output of the console. Note that the chain automatically generates the first block with a difficulty of two, as shown below:
+This is the raw output of the client console. This will be the same for the local blockchain and the client-server implementation. Note that the chain automatically generates the first block with a difficulty of two, as shown below:
 
 >/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63018:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/danmolenhouse/Project3Task0/out/production/Project3Task0:/Users/danmolenhouse/Project3Task0/gson-2.8.2.jar BlockChain
 >0. View basic blockchain status.
