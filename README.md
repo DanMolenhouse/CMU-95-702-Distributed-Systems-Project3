@@ -183,7 +183,7 @@ First we will view the chain as it exists:
 >
 >View the blockchain: "{"ds_chain":"["{"index":0,"time stamp":"2022-03-18 16:45:11.353","tx":"Genesis","PrevHash":"","nonce":223,"difficulty":2}","{"index":1,"time stamp":"2022-03-18 16:45:32.71","tx":""Alice pays Bob 100 DS Coin"","PrevHash":"00746094b8b774a14cbaea3380c1f3a1a2ee86d65c500c7e4dbcc56650e73c0a","nonce":42,"difficulty":2}","{"index":2,"time stamp":"2022-03-18 16:45:46.593","tx":""Bob pays Carol 50 DSCoin"","PrevHash":"00a28aa6ed2ec72267a185aea83262dbb154789dd1815e59fd37b0bc671a221f","nonce":502,"difficulty":2}","{"index":3,"time stamp":"2022-03-18 16:46:02.986","tx":""Carol pays Andy 10 DS Coin"","PrevHash":"0052c2a7c2409edd07191b3d3eb23f34e475686ba1f08370fa8a16d7bfa4a27e","nonce":185,"difficulty":2}"]","chainHash":"00419e7c89c483ff46403031a37b2f269ddffa7cd7f4aa024ea103b9c196892b"}"
 
-Next, we intentionally corrupt the chain as follows:
+Next, we intentionally corrupt the chain as follows (changing the payment of 100 DS Coins from Alice to Bob to 76 DS Coins):
 
 >0. View basic blockchain status.
 >1. Add a transaction to the blockchain.
