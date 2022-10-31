@@ -165,4 +165,33 @@ The logic for this is as follows, taken from BlockChain.java:
                 }
             }
         }
+        
+        
+"chainHash" represents the hash of the entire chain. In the case of an empty blockchain besides the genesis block, the hash of the genesis block is expected to equal the chain hash. Also checks for proof of work errors. If a block is modified somehow, the hash checks and proof of work checks will no longer pass and an error will be identified. This will be demonstrated below.
+
+The user can intentionally corrupt the chain as follows:
+
+>0. View basic blockchain status.
+>1. Add a transaction to the blockchain.
+>2. Verify the blockchain.
+>3. View the blockchain.
+>4. Corrupt the chain.
+>5. Hide the corruption by repairing the chain.
+>6. Exit client.
+>
+>4
+>
+>Corrupt the chain
+>
+>Enter block ID of block to corrupt
+>
+>1
+>
+>Enter new data for block
+>
+>Alice pays Bob 76 DS Coin
+>
+>Block 1 now contains ""Alice pays Bob 76 DS Coin""
+
+
 
