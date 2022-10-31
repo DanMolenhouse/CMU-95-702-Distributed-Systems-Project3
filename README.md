@@ -124,7 +124,6 @@ The user can check the status of the chain with the following input. This will c
 
 The logic for this is as follows, taken from BlockChain.java:
 
- //Tests if chain is valid
     public java.lang.String isChainValid(){
 
         //if block is empty besides genesis chain
