@@ -1,12 +1,11 @@
 # Distributed-Systems-Project3
 **Project 3 - Distributed Systems**
 
-
 **Project Objective:**
 1. Distinguish between functional and non-functional characteristics of distributed systems.
 2. Understand how blockchains technology works by creating a blockchain API that a remote client interacts with.
     - Note that the blockchain implemented here is not true to real blockchains, which are decentralized and include P2P communication. This blockchain also does not include Merkle Trees, it simply serves as a foundation of understanding.
-3. Use JSON messaging for communicaiton.
+3. Use JSON messaging for communicaiton through TCP.
 
 **Tasks:**
 
@@ -28,6 +27,11 @@
 
 **Topics/Skills covered:**
 - Blockchain fundamentals
+- Hashing
+- Proof-of-work
+- TCP communication
+- JSON messages
+- Non-functional Requirements (performance, usability, reliability, etc)
 
 **Demonstration of completed tasks:**
 
