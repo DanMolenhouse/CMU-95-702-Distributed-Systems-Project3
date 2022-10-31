@@ -33,7 +33,7 @@
 
 This is the raw output of the client console. This will be the same for the local blockchain and the client-side implementation in the second task. Note that the chain automatically generates the first block with a difficulty of two, as shown below:
 
->/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63018:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/danmolenhouse/Project3Task0/out/production/Project3Task0:/Users/danmolenhouse/Project3Task0/gson-2.8.2.jar BlockChain
+
 >0. View basic blockchain status.
 >1. Add a transaction to the blockchain.
 >2. Verify the blockchain.
@@ -60,14 +60,6 @@ This is the raw output of the client console. This will be the same for the loca
 
 Here is an example of this same command once some transactions have been added to the blockchain:
 
->0. View basic blockchain status.
->1. Add a transaction to the blockchain.
->2. Verify the blockchain.
->3. View the blockchain.
->4. Corrupt the chain.
->5. Hide the corruption by repairing the chain.
->6. Exit client.
->
 >0
 >
 >Current Size of chain: 5
@@ -86,14 +78,6 @@ Here is an example of this same command once some transactions have been added t
 
 This is an example of a transaction being added to the chain:
 
->0. View basic blockchain status.
->1. Add a transaction to the blockchain.
->2. Verify the blockchain.
->3. View the blockchain.
->4. Corrupt the chain.
->5. Hide the corruption by repairing the chain.
->6. Exit client.
->
 >1
 >
 >Enter difficulty greater than 0 
@@ -108,14 +92,6 @@ This is an example of a transaction being added to the chain:
 
 The user can check the status of the chain with the following input. This will check for proof of work errors.
 
->0. View basic blockchain status.
->1. Add a transaction to the blockchain.
->2. Verify the blockchain.
->3. View the blockchain.
->4. Corrupt the chain.
->5. Hide the corruption by repairing the chain.
->6. Exit client.
->
 >2
 >
 >"Chain verification: TRUE"
@@ -171,28 +147,12 @@ The logic for this is as follows, taken from BlockChain.java:
 
 First we will view the chain as it exists:
 
->0. View basic blockchain status.
->1. Add a transaction to the blockchain.
->2. Verify the blockchain.
->3. View the blockchain.
->4. Corrupt the chain.
->5. Hide the corruption by repairing the chain.
->6. Exit client.
->
 >3
 >
->View the blockchain: "{"ds_chain":"["{"index":0,"time stamp":"2022-03-18 16:45:11.353","tx":"Genesis","PrevHash":"","nonce":223,"difficulty":2}","{"index":1,"time stamp":"2022-03-18 16:45:32.71","tx":""Alice pays Bob 100 DS Coin"","PrevHash":"00746094b8b774a14cbaea3380c1f3a1a2ee86d65c500c7e4dbcc56650e73c0a","nonce":42,"difficulty":2}","{"index":2,"time stamp":"2022-03-18 16:45:46.593","tx":""Bob pays Carol 50 DSCoin"","PrevHash":"00a28aa6ed2ec72267a185aea83262dbb154789dd1815e59fd37b0bc671a221f","nonce":502,"difficulty":2}","{"index":3,"time stamp":"2022-03-18 16:46:02.986","tx":""Carol pays Andy 10 DS Coin"","PrevHash":"0052c2a7c2409edd07191b3d3eb23f34e475686ba1f08370fa8a16d7bfa4a27e","nonce":185,"difficulty":2}"]","chainHash":"00419e7c89c483ff46403031a37b2f269ddffa7cd7f4aa024ea103b9c196892b"}"
+>View the blockchain: "{"ds_chain":"["{"index":0,"time stamp":"2022-03-18 16:45:11.353","tx":"Genesis","PrevHash":"","nonce":223,"difficulty":2}","{"index":1,"time stamp":"2022-03-18 16:45:32.71",**"tx":""Alice pays Bob 100 DS Coin""**,"PrevHash":"00746094b8b774a14cbaea3380c1f3a1a2ee86d65c500c7e4dbcc56650e73c0a","nonce":42,"difficulty":2}","{"index":2,"time stamp":"2022-03-18 16:45:46.593","tx":""Bob pays Carol 50 DSCoin"","PrevHash":"00a28aa6ed2ec72267a185aea83262dbb154789dd1815e59fd37b0bc671a221f","nonce":502,"difficulty":2}","{"index":3,"time stamp":"2022-03-18 16:46:02.986","tx":""Carol pays Andy 10 DS Coin"","PrevHash":"0052c2a7c2409edd07191b3d3eb23f34e475686ba1f08370fa8a16d7bfa4a27e","nonce":185,"difficulty":2}"]","chainHash":"00419e7c89c483ff46403031a37b2f269ddffa7cd7f4aa024ea103b9c196892b"}"
 
 Next, we intentionally corrupt the chain as follows (changing the payment of 100 DS Coins from Alice to Bob to 76 DS Coins):
 
->0. View basic blockchain status.
->1. Add a transaction to the blockchain.
->2. Verify the blockchain.
->3. View the blockchain.
->4. Corrupt the chain.
->5. Hide the corruption by repairing the chain.
->6. Exit client.
->
 >4
 >
 >Corrupt the chain
@@ -207,17 +167,10 @@ Next, we intentionally corrupt the chain as follows (changing the payment of 100
 >
 >Block 1 now contains ""Alice pays Bob 76 DS Coin""
 
->0. View basic blockchain status.
->1. Add a transaction to the blockchain.
->2. Verify the blockchain.
->3. View the blockchain.
->4. Corrupt the chain.
->5. Hide the corruption by repairing the chain.
->6. Exit client.
->
+Now we will view the corrupted block on the chain:
 >3
 >
->View the blockchain: "{"ds_chain":"["{"index":0,"time stamp":"2022-03-18 16:45:11.353","tx":"Genesis","PrevHash":"","nonce":223,"difficulty":2}","{"index":1,"time stamp":"2022-03-18 16:45:32.71","tx":""Alice pays Bob 76 DS Coin"","PrevHash":"00746094b8b774a14cbaea3380c1f3a1a2ee86d65c500c7e4dbcc56650e73c0a","nonce":42,"difficulty":2}","{"index":2,"time stamp":"2022-03-18 16:45:46.593","tx":""Bob pays Carol 50 DSCoin"","PrevHash":"00a28aa6ed2ec72267a185aea83262dbb154789dd1815e59fd37b0bc671a221f","nonce":502,"difficulty":2}","{"index":3,"time stamp":"2022-03-18 16:46:02.986","tx":""Carol pays Andy 10 DS Coin"","PrevHash":"0052c2a7c2409edd07191b3d3eb23f34e475686ba1f08370fa8a16d7bfa4a27e","nonce":185,"difficulty":2}"]","chainHash":"00419e7c89c483ff46403031a37b2f269ddffa7cd7f4aa024ea103b9c196892b"}"
+>View the blockchain: "{"ds_chain":"["{"index":0,"time stamp":"2022-03-18 16:45:11.353","tx":"Genesis","PrevHash":"","nonce":223,"difficulty":2}","{"index":1,"time stamp":"2022-03-18 16:45:32.71",**"tx":""Alice pays Bob 76 DS Coin""**,"PrevHash":"00746094b8b774a14cbaea3380c1f3a1a2ee86d65c500c7e4dbcc56650e73c0a","nonce":42,"difficulty":2}","{"index":2,"time stamp":"2022-03-18 16:45:46.593","tx":""Bob pays Carol 50 DSCoin"","PrevHash":"00a28aa6ed2ec72267a185aea83262dbb154789dd1815e59fd37b0bc671a221f","nonce":502,"difficulty":2}","{"index":3,"time stamp":"2022-03-18 16:46:02.986","tx":""Carol pays Andy 10 DS Coin"","PrevHash":"0052c2a7c2409edd07191b3d3eb23f34e475686ba1f08370fa8a16d7bfa4a27e","nonce":185,"difficulty":2}"]","chainHash":"00419e7c89c483ff46403031a37b2f269ddffa7cd7f4aa024ea103b9c196892b"}"
 
 
 
