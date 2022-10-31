@@ -31,7 +31,7 @@
 
 **Demonstration of completed tasks:**
 
-This is the raw output of the client console. This will be the same for the local blockchain and the client-server implementation. Note that the chain automatically generates the first block with a difficulty of two, as shown below:
+This is the raw output of the client console. This will be the same for the local blockchain and the client-side implementation in the second task. Note that the chain automatically generates the first block with a difficulty of two, as shown below:
 
 >/Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=63018:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/danmolenhouse/Project3Task0/out/production/Project3Task0:/Users/danmolenhouse/Project3Task0/gson-2.8.2.jar BlockChain
 >0. View basic blockchain status.
@@ -84,4 +84,22 @@ Here is an example of this same command once some transactions have been added t
 >
 >Chain hash: 0000f8d83eadf711912d7518ee04258c14475ada7c2a6ddcd80c28efaa3e1e7b
 
+This is an example of a transaction being added to the chain:
+
+>0. View basic blockchain status.
+>1. Add a transaction to the blockchain.
+>2. Verify the blockchain.
+>3. View the blockchain.
+>4. Corrupt the chain.
+>5. Hide the corruption by repairing the chain.
+>6. Exit client.
+>1
+>
+>Enter difficulty > 0 
+>2
+>
+>Enter transaction
+>Alice pays Bob 100 DS Coin
+>
+>Total execution time was 7.0 milliseconds
 
