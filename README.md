@@ -182,56 +182,86 @@ Now when we validate the chain, we get the following error:
 **Raw output of client side console output:**
 
 >---The server is running.---
+>
 >Blockchain server running
+>
 >We have a visitor
+>
 >Operation Requested: 0
 >
->Response: >{"operation":0,"size":1,"difficulty":2,"totalDifficulty":2.0,"hashesPerSecond":1998,"totalExpectedHashes":256.0,"nonce":203,"hash":"00106cb1f4554be7b5845b7ce41c026a852c5db1054d2729fdf474187e90f55c"}
+>
+>Response: 
+>>{"operation":0,"size":1,"difficulty":2,"totalDifficulty":2.0,"hashesPerSecond":1998,"totalExpectedHashes":256.0,"nonce":203,"hash":"00106cb1f4554be7b5845b7ce41c026a852c5db1054d2729fdf474187e90f55c"}
 >Blockchain server running
+>
 >We have a visitor
+>
 >Operation Requested: 1
 >
 >Adding a block
+>
 >Total execution time was 46.0 milliseconds
 >
 >Response: {"operation":1,"elapsedTime":46.0}
+>
 >Blockchain server running
+>
 >We have a visitor
+>
 >Operation Requested: 1
 >
 >Adding a block
+>
 >Total execution time was 27.0 milliseconds
 >
 >Response: {"operation":1,"elapsedTime":27.0}
+>
 >Blockchain server running
+>
 >We have a visitor
+>
 >Operation Requested: 1
 >
 >Adding a block
+>
 >Total execution time was 17.0 milliseconds
 >
 >Response: {"operation":1,"elapsedTime":17.0}
+>
 >Blockchain server running
+>
 >We have a visitor
+>
 >Operation Requested: 2
 >
 >Verifying entire chain
+>
 >Total execution time was 13.0 milliseconds
 >
 >Response: {"operation":2,"elapsedTime":13.0,"verification":"Chain verification: TRUE"}
+>
 >Blockchain server running
+>
 >We have a visitor
+>
 >Operation Requested: 3
 >
 >View the blockchain
+>
 >Response: {"operation":3,"wholeChain":"{\"ds_chain\":\"[\"{\"index\":0,\"time stamp\":\"2022-03-18 16:49:13.793\",\"tx\":\"Genesis\",\"PrevHash\":\"\",\"nonce\":203,\"difficulty\":2}\",\"{\"index\":1,\"time stamp\":\"2022-03-18 16:49:43.833\",\"tx\":\"\"Alice pays Bob 100 DS Coin\"\",\"PrevHash\":\"00106cb1f4554be7b5845b7ce41c026a852c5db1054d2729fdf474187e90f55c\",\"nonce\":404,\"difficulty\":2}\",\"{\"index\":2,\"time stamp\":\"2022-03-18 16:49:56.065\",\"tx\":\"\"Bob pays Carol 50 DS Coin\"\",\"PrevHash\":\"003381e3637be706caea49b1732f33c94e8c0b7c5243adb06e594c00bb1133a2\",\"nonce\":294,\"difficulty\":2}\",\"{\"index\":3,\"time stamp\":\"2022-03-18 16:50:10.409\",\"tx\":\"\"Carol pays Andy 10 DS Coin\"\",\"PrevHash\":\"00c187c2b8bbd5339a456beaf3839329d6344d859c740182abfd8f8c2889759e\",\"nonce\":115,\"difficulty\":2}\"]\",\"chainHash\":\"0072a7829ba10f9e7be9bbf130ffd16e7dd6d6b345ac77457e905012ed5fc80f\"}"}
+>
 >Blockchain server running
+>
 >We have a visitor
+>
 >Operation Requested: 4
 >
 >Corrupt the blockchain
+>
 >Block 1 now contains "Alice pays Bob 76 DS Coin"
+>
 >Response: {"index":1,"tx":"\"Alice pays Bob 76 DS Coin\""}
+>
 >Blockchain server running
 
 
