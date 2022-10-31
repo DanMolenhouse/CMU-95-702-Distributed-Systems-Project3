@@ -8,21 +8,21 @@
 
 **Tasks:**
 
-0. Build a standalone blockchain that allows the user to:
-  a. View basic blockchain status. This includes:
-      - Number of transactions on the chain
-      - Difficulty of the most recent block
-      - Total difficulty for all blocks
-      - Hashes per second of the current machine
-      - Expected hashes for whole chain
-      - Nonce for the most recent block
-      - Hash of the whole chain
-  b. Add a transaction to the chain. For the purposes of this simple blockchain, a transaction is simply a string that says something like "Bob pays Joe 50 Coins". The user also chooses a difficulty in this step, which is the number of leading 0's in the hash of the block. 
-  c. Verify the blockchain.
-  d. Corrupt the chain.
-  e. Repair the chain and eliminate corruption.
-  
-1. Create a distributed system where a remote client interacts with a blockchain API
+1. Build a standalone blockchain that allows the user to:
+  - View basic blockchain status. This includes:
+    - Number of transactions on the chain
+    - Difficulty of the most recent block
+    - Total difficulty for all blocks
+    - Hashes per second of the current machine
+    - Expected hashes for whole chain
+    - Nonce for the most recent block
+    - Hash of the whole chain
+  - Add a transaction to the chain. For the purposes of this simple blockchain, a transaction is simply a string that says something like "Bob pays Joe 50 Coins". The user also chooses a difficulty in this step, which is the number of leading 0's in the hash of the block. 
+  - Verify the blockchain.
+  - Corrupt the chain.
+  - Repair the chain and eliminate corruption. 
+2. Create a distributed system where a remote client interacts with a blockchain API
+3. 
 
 **Topics/Skills covered:**
 
