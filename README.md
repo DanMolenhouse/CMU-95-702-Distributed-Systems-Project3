@@ -1,4 +1,4 @@
-# Distributed-Systems-Project3
+# Distributed-Systems-Project3-Blockchain
 **Project 3 - Distributed Systems**
 
 **Project Objective:**
