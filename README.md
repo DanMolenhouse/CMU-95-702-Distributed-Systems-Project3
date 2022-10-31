@@ -93,13 +93,36 @@ This is an example of a transaction being added to the chain:
 >4. Corrupt the chain.
 >5. Hide the corruption by repairing the chain.
 >6. Exit client.
+>
 >1
 >
->Enter difficulty > 0 
+>Enter difficulty
+> 0 
+>
 >2
 >
 >Enter transaction
+>
 >Alice pays Bob 100 DS Coin
 >
 >Total execution time was 7.0 milliseconds
+
+The user can check the status of the chain with the following input. This will check for proof of work errors, the methodology can be explored in the BlockChain.java file.
+
+>0. View basic blockchain status.
+>1. Add a transaction to the blockchain.
+>2. Verify the blockchain.
+>3. View the blockchain.
+>4. Corrupt the chain.
+>5. Hide the corruption by repairing the chain.
+>6. Exit client.
+>
+>2
+>
+>"Chain verification: TRUE"
+>
+>Total execution time was 20.0 milliseconds
+
+
+
 
