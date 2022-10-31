@@ -97,6 +97,7 @@ This is an example of a transaction being added to the chain:
 >1
 >
 >Enter difficulty
+>
 > 0 
 >
 >2
