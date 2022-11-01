@@ -147,7 +147,7 @@ The logic for this is as follows, taken from BlockChain.java:
         }
         
         
-"chainHash" represents the hash of the entire chain. In the case of an empty blockchain besides the genesis block, the hash of the genesis block is expected to equal the chain hash. Also checks for proof of work errors. If a block is modified somehow, the hash checks and proof of work checks will no longer pass and an error will be identified. This will be demonstrated below.
+"chainHash" represents the hash of the entire chain. In the case of an empty blockchain besides the genesis block, the hash of the genesis block is expected to equal the chain hash. This also checks for proof of work errors. If a block is modified somehow, the hash checks and proof of work checks will no longer pass and an error will be identified. This will be demonstrated below.
 
 First we will view the chain as it exists:
 
@@ -183,7 +183,7 @@ Now when we validate the chain, we get the following error:
 >"Block 1 proof of work error"
 >Total execution time was 5.0 milliseconds
 
-**Raw output of client side console output:**
+**Raw output of server side console output:**
 
 >---The server is running.---
 >
