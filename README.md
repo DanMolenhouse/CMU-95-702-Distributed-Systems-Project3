@@ -24,6 +24,7 @@
   - Repair the chain and eliminate corruption. 
 2. Implement the blockchain completed in Task 1 on a remote server.
 3. Create a client that communicates with the Blockchain server through TCP sockets using JSON messages.
+4. Digitally sign client-server interactions using RSA.
 
 **Topics/Skills covered:**
 - Blockchain fundamentals
@@ -32,6 +33,7 @@
 - TCP communication
 - JSON messages
 - Non-functional Requirements (performance, usability, reliability, etc)
+- RSA / Digital Signatures
 
 **Demonstration of completed tasks:**
 
