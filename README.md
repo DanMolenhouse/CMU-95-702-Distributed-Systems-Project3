@@ -33,7 +33,6 @@
 - TCP communication
 - JSON messages
 - Non-functional Requirements (performance, usability, reliability, etc)
-- RSA / Digital Signatures
 
 **Demonstration of completed tasks:**
 
